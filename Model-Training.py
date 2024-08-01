@@ -143,11 +143,11 @@ col1, col2, col3 = st.columns(3, gap='large')
 
 
 # Upload
-def upload_click(): st.session_state.uploading_way = "upload"
+# def upload_click(): st.session_state.uploading_way = "upload"
 
 
-col1.markdown("<h5 align='center'> Upload File", unsafe_allow_html=True)
-col1.button("Upload File", key="upload_file", use_container_width=True, on_click=upload_click)
+# col1.markdown("<h5 align='center'> Upload File", unsafe_allow_html=True)
+# col1.button("Upload File", key="upload_file", use_container_width=True, on_click=upload_click)
 
 
 # Select
@@ -159,11 +159,11 @@ col2.button("Select from Ours", key="select_from_ours", use_container_width=True
 
 
 # URL
-def url_click(): st.session_state.uploading_way = "url"
+# def url_click(): st.session_state.uploading_way = "url"
 
 
-col3.markdown("<h5 align='center'> Write URL", unsafe_allow_html=True)
-col3.button("Write URL", key="write_url", use_container_width=True, on_click=url_click)
+# col3.markdown("<h5 align='center'> Write URL", unsafe_allow_html=True)
+# col3.button("Write URL", key="write_url", use_container_width=True, on_click=url_click)
 
 # No Data
 if st.session_state.df is None:
