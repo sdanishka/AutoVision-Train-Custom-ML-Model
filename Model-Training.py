@@ -169,14 +169,14 @@ col3.button("Write URL", key="write_url", use_container_width=True, on_click=url
 if st.session_state.df is None:
 
     # Upload
-    if uploading_way == "upload":
-        uploaded_file = st.file_uploader("Upload the Dataset", type="csv")
-        if uploaded_file:
-            df = load_data(uploaded_file)
-            st.session_state.df = df
+    # if uploading_way == "upload":
+    #     uploaded_file = st.file_uploader("Upload the Dataset", type="csv")
+    #     if uploaded_file:
+    #         df = load_data(uploaded_file)
+    #         st.session_state.df = df
 
     # Select
-    elif uploading_way == "select":
+    if uploading_way == "select":
         selected = st.selectbox("Select Dataset",
                                 ["Select", "Titanic Dataset", "Iris Dataset", "Breast Cancer Dataset",
                                  "Diabetes Dataset", "Digits Dataset",
@@ -241,11 +241,11 @@ if st.session_state.df is None:
             st.session_state.df = df
 
     # URL
-    elif uploading_way == "url":
-        url = st.text_input("Enter URL")
-        if url:
-            df = load_data(url)
-            st.session_state.df = df
+    # elif uploading_way == "url":
+    #     url = st.text_input("Enter URL")
+    #     if url:
+    #         df = load_data(url)
+    #         st.session_state.df = df
 
 # Dataframe
 if st.session_state.df is not None:
