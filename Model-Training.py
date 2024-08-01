@@ -154,8 +154,8 @@ col1, col2, col3 = st.columns(3, gap='large')
 def select_click(): st.session_state.uploading_way = "select"
 
 
-col2.markdown("<h5 align='center'> Select from Ours", unsafe_allow_html=True)
-col2.button("Select from Ours", key="select_from_ours", use_container_width=True, on_click=select_click)
+col2.markdown("<h5 align='center'> Select a Dataset", unsafe_allow_html=True)
+col2.button("Select a Dataset", key="select_from_ours", use_container_width=True, on_click=select_click)
 
 
 # URL
