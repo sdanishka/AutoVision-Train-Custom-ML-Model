@@ -323,17 +323,17 @@ if st.session_state.df is not None:
                 new_line()
 
         # Correlation Matrix using heatmap seabron
-        corr = st.checkbox("Show Correlation", value=False)
-        new_line()
-        if corr:
+        # corr = st.checkbox("Show Correlation", value=False)
+        # new_line()
+        # if corr:
 
-            if df.corr().columns.tolist():
-                fig, ax = plt.subplots()
-                sns.heatmap(df.corr(), cmap='Blues', annot=True, ax=ax)
-                st.pyplot(fig)
-                new_line()
-            else:
-                st.info("There is no Numerical Features.")
+        #     if df.corr().columns.tolist():
+        #         fig, ax = plt.subplots()
+        #         sns.heatmap(df.corr(), cmap='Blues', annot=True, ax=ax)
+        #         st.pyplot(fig)
+        #         new_line()
+        #     else:
+        #         st.info("There is no Numerical Features.")
 
         # Missing Values
         missing = st.checkbox("Show Missing Values", value=False)
