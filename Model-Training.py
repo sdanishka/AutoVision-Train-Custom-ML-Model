@@ -134,8 +134,7 @@ st.divider()
 st.markdown("<h2 align='center'> <b> Getting Started", unsafe_allow_html=True)
 new_line(1)
 st.write(
-    "The first step is to upload your data. You can upload your data in three ways: **Upload File**, **Select from "
-    "Ours**, and **Write URL**. In all ways the data should be a csv file and should not exceed 200 MB.")
+    "The first step is to upload your data. You can upload your dataset. The dataset should be a csv file and should not exceed 200 MB.")
 new_line(1)
 
 # Uploading Way
