@@ -178,14 +178,14 @@ if st.session_state.df is None:
     # Select
     if uploading_way == "select":
         selected = st.selectbox("Select Dataset",
-                                ["Select", "Titanic Dataset", "Iris Dataset", "Breast Cancer Dataset",
+                                ["Select", "Iris Dataset", "Breast Cancer Dataset",
                                  "Diabetes Dataset", "Digits Dataset",
                                  "Olivetti Faces Dataset",
                                  "Covid-19 Dataset"])
 
-        if selected == "Titanic Dataset":
-            df = load_data("./data/titanic.csv")
-            st.session_state.df = df
+        # if selected == "Titanic Dataset":
+        #     df = load_data("./data/titanic.csv")
+        #     st.session_state.df = df
 
         elif selected == "Iris Dataset":
             from sklearn.datasets import load_iris
