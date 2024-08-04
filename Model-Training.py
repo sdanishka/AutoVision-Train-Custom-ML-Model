@@ -2092,7 +2092,7 @@ y_pred_test = model.predict(X_test)
             # Choose Evaluation Metric
             if st.session_state['problem_type'] == "Classification":
                 evaluation_metric = st.multiselect("Evaluation Metric",
-                                                   ["Accuracy", "Precision", "Recall", "F1 Score", "AUC Score"],
+                                                   ["Accuracy", "Precision", "Recall", "F1 Score"],
                                                    key='evaluation_metric')
 
             elif st.session_state['problem_type'] == "Regression":
