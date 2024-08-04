@@ -187,7 +187,7 @@ if st.session_state.df is None:
         #     df = load_data("./data/titanic.csv")
         #     st.session_state.df = df
 
-        elif selected == "Iris Dataset":
+        if selected == "Iris Dataset":
             from sklearn.datasets import load_iris
 
             iris = load_iris()
